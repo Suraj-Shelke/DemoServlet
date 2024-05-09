@@ -18,11 +18,12 @@ public class AddServlet extends HttpServlet {
 		int result=n1+n2;
 		//PrintWriter out=res.getWriter();
 		//out.print("Result is: "+result);
-		req.setAttribute("n1", n1);
-		req.setAttribute("n2",n2);
-		req.setAttribute("result", result);
-		RequestDispatcher rd=req.getRequestDispatcher("square");
-		rd.forward(req,res);
+//		req.setAttribute("n1", n1);
+//		req.setAttribute("n2",n2);
+//		req.setAttribute("result", result);
+//		RequestDispatcher rd=req.getRequestDispatcher("square");
+//		rd.forward(req,res);
+		res.sendRedirect("square?result="+result);
 	}
 
 }

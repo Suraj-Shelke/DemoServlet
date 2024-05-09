@@ -11,12 +11,13 @@ public class SquareServlet extends HttpServlet {
 	
 	public void doGet(HttpServletRequest req,HttpServletResponse res) throws IOException
 	{
-		int n1=(int) req.getAttribute("n1");
-		int n2=(int) req.getAttribute("n2");
-		int result=(int) req.getAttribute("result");
+//		int n1=(int) req.getAttribute("n1");
+//		int n2=(int) req.getAttribute("n2");
+//		int result=(int) req.getAttribute("result");
+		int result=Integer.parseInt(req.getParameter("result"));
 		result=result*result;
 		PrintWriter out=res.getWriter();
-		out.print("square of addition of the number "+n1+" and "+n2+" is : " +result);
+		out.print("square of addition of the number is : " +result);
 		
 	}
 
