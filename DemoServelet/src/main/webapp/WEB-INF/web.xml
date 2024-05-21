@@ -2,9 +2,13 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
   <display-name>DemoServelet</display-name>
  
-  <servlet>
+  <!--<servlet>
   	<servlet-name>AddServlet</servlet-name>
   	<servlet-class>com.sp.AddServlet</servlet-class>
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>Pooja</param-value>
+  	</init-param>
   </servlet>
   <servlet-mapping>
   	<servlet-name>AddServlet</servlet-name>
@@ -22,4 +26,14 @@
   
   </servlet-mapping>
   
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>Suraj</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>Phone</param-name>
+  	<param-value>Redmi</param-value>
+  </context-param>
+  -->
 </web-app>
